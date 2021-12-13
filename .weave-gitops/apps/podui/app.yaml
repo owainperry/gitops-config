@@ -1,0 +1,15 @@
+---
+apiVersion: wego.weave.works/v1alpha1
+kind: Application
+metadata:
+  labels:
+    wego.weave.works/app-identifier: wego-ed060e407b4aaf343786a709a68c5f32
+  name: podui
+  namespace: wego-system
+spec:
+  branch: main
+  config_url: ssh://git@github.com/owainperry/gitops-config.git
+  deployment_type: kustomize
+  path: ./
+  source_type: git
+  url: ssh://git@github.com/owainperry/podinfo-deploy.git
