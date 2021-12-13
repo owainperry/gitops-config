@@ -1,9 +1,0 @@
-apiVersion: kustomize.config.k8s.io/v1beta1
-kind: Kustomization
-metadata:
-  name: podinfo_*_dave
-  namespace: wego-system
-resources:
-- app.yaml
-- podinfo_*_dave-gitops-deploy.yaml
-- podinfo_*_dave-gitops-source.yaml
